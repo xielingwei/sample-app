@@ -3,11 +3,13 @@ ruby '2.0.0'
 
 gem 'rails', '4.0.0'
 gem 'rubyzip', "~> 0.9.9"
+gem 'bootstrap-sass', '2.3.2.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.7'
   gem 'rspec-rails', '3.3.2'
   gem 'guard-rspec', '4.6.0'
+  gem 'spork', github: 'sporkrb/spork', branch: 'master'
   gem 'spork-rails', github: 'railstutorial/spork-rails'
   gem 'guard-spork', :github => 'guard/guard-spork'
   gem 'childprocess', '0.3.6'
@@ -28,7 +30,7 @@ group :test do
   # gem 'win32console', '1.3.2'
 end
 
-gem 'sass-rails', '4.0.0'
+gem 'sass-rails', '~> 4.0.2'
 gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.0'
 gem 'jquery-rails', '2.2.1'
