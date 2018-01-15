@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/bmabey/database_cleaner.git
-  revision: db928d229ef14486fd55f2fd42227d2412566702
+  revision: 07fa376c78014d69eb08d75346a4c715731448b0
   specs:
     database_cleaner (1.6.3)
 
@@ -62,14 +62,16 @@ GEM
     bcrypt-ruby (3.0.1)
     bootstrap-sass (2.3.2.0)
       sass (~> 3.2)
+    bootstrap-will_paginate (0.0.9)
+      will_paginate
     builder (3.1.4)
-    capybara (2.16.1)
+    capybara (2.17.0)
       addressable
       mini_mime (>= 0.1.3)
       nokogiri (>= 1.3.3)
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
-      xpath (~> 2.0)
+      xpath (>= 2.0, < 4.0)
     childprocess (0.3.6)
       ffi (~> 1.0, >= 1.0.6)
     coderay (1.1.2)
@@ -109,13 +111,15 @@ GEM
     factory_girl_rails (4.2.1)
       factory_girl (~> 4.2.0)
       railties (>= 3.0.0)
+    faker (1.1.2)
+      i18n (~> 0.5)
     ffi (1.9.18)
     formatador (0.2.5)
     gherkin (4.1.3)
-    guard (2.14.1)
+    guard (2.14.2)
       formatador (>= 0.2.4)
       listen (>= 2.7, < 4.0)
-      lumberjack (~> 1.0)
+      lumberjack (>= 1.0.12, < 2.0)
       nenv (~> 0.1)
       notiffany (~> 0.0)
       pry (>= 0.9.12)
@@ -148,7 +152,7 @@ GEM
     mini_mime (1.0.0)
     mini_portile2 (2.1.0)
     minitest (4.7.5)
-    multi_json (1.12.2)
+    multi_json (1.13.0)
     multi_test (0.1.2)
     nenv (0.3.0)
     nokogiri (1.6.8.1)
@@ -246,6 +250,7 @@ GEM
     uglifier (2.1.1)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
+    will_paginate (3.0.4)
     xpath (2.1.0)
       nokogiri (~> 1.3)
 
@@ -255,12 +260,14 @@ PLATFORMS
 DEPENDENCIES
   bcrypt-ruby (= 3.0.1)
   bootstrap-sass (= 2.3.2.0)
+  bootstrap-will_paginate (= 0.0.9)
   capybara (>= 2.2.0)
   childprocess (= 0.3.6)
   coffee-rails (= 4.0.0)
   cucumber-rails (= 1.3.0)
   database_cleaner!
   factory_girl_rails (= 4.2.1)
+  faker (= 1.1.2)
   guard-rspec (= 4.6.0)
   guard-spork!
   jbuilder (= 1.0.2)
@@ -279,6 +286,7 @@ DEPENDENCIES
   sqlite3 (= 1.3.7)
   turbolinks (= 1.1.1)
   uglifier (= 2.1.1)
+  will_paginate (= 3.0.4)
 
 RUBY VERSION
    ruby 2.0.0p648
